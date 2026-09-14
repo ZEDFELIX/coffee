@@ -20,6 +20,36 @@
     transition: all .2s linear;
 }
 
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    z-index: 10000;
+    font-size: 1.6rem;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+:focus-visible {
+    outline: 3px solid var(--main-color);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -116,7 +146,7 @@ section {
 .home {
     min-height: 100vh;
     padding-top: 12rem;
-    background: url(../image/home-bg.jpg) no-repeat;
+    background: url(images/home-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -254,7 +284,7 @@ section {
 /* MENU */
 
 .menu {
-    background: url(../image/menu-bg.jpg) no-repeat;
+    background: url(images/menu-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -394,7 +424,7 @@ section {
 /* BOOK */
 
 .book {
-    background: url(../image/book-bg.jpg);
+    background: url(images/book-bg.jpg);
     background-position: center;
     background-size: cover;
 }

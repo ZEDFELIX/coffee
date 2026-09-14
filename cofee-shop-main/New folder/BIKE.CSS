@@ -116,7 +116,7 @@ section {
 .home {
     min-height: 100vh;
     padding-top: 12rem;
-    background: url(../image/home-bg.jpg) no-repeat;
+    background: url(images/home-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -254,7 +254,7 @@ section {
 /* MENU */
 
 .menu {
-    background: url(../image/menu-bg.jpg) no-repeat;
+    background: url(images/menu-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -394,7 +394,7 @@ section {
 /* BOOK */
 
 .book {
-    background: url(../image/book-bg.jpg);
+    background: url(images/book-bg.jpg);
     background-position: center;
     background-size: cover;
 }
